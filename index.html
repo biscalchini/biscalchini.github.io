@@ -86,7 +86,24 @@
   .nav-links a { color: rgba(255,255,255,0.82); text-decoration: none; font-size: 0.9rem; font-weight: 600; transition: color 0.15s; }
   .nav-links a:hover { color: var(--gold); }
   .nav .btn { padding: 10px 20px; font-size: 0.85rem; }
-  @media (max-width: 860px) { .nav-links { display: none; } }
+  .menu-btn { display: none; background: none; border: 0; cursor: pointer; padding: 6px; }
+  .menu-btn svg { width: 26px; height: 26px; }
+  @media (max-width: 860px) {
+    .menu-btn { display: block; }
+    .nav-links {
+      display: none;
+      position: absolute; top: 100%; left: 0; right: 0;
+      background: var(--navy);
+      flex-direction: column; gap: 0;
+      padding: 6px 24px 14px;
+      border-bottom: 1px solid rgba(255,255,255,0.12);
+      box-shadow: 0 20px 30px -18px rgba(0,0,0,0.5);
+    }
+    .nav.open .nav-links { display: flex; }
+    .nav-links li { border-top: 1px solid rgba(255,255,255,0.08); }
+    .nav-links li:first-child { border-top: none; }
+    .nav-links a { display: block; padding: 13px 0; font-size: 0.95rem; }
+  }
   @media (max-width: 480px) { .nav .btn { padding: 9px 14px; font-size: 0.78rem; } .logo { font-size: 1.05rem; } }
 
   /* ============ HERO ============ */
@@ -366,6 +383,9 @@
       <li><a href="blog.html">Blog</a></li>
     </ul>
     <a class="btn" href="https://wa.me/5516991392337?text=Ol%C3%A1%21%20Vi%20seu%20site%20e%20gostaria%20de%20conversar.">Falar no WhatsApp</a>
+    <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#F5F1E8" stroke-width="2.2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
   </div>
 </nav>
 
@@ -679,6 +699,18 @@
     });
   }, { threshold: 0.12 });
   document.querySelectorAll(".rv").forEach(function (el) { obs.observe(el); });
+
+  var nav = document.querySelector(".nav");
+  var mb = document.querySelector(".menu-btn");
+  if (nav && mb) {
+    mb.addEventListener("click", function () {
+      var open = nav.classList.toggle("open");
+      mb.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+    document.querySelectorAll(".nav-links a").forEach(function (a) {
+      a.addEventListener("click", function () { nav.classList.remove("open"); });
+    });
+  }
 </script>
 
 </body>
