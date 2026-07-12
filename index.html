@@ -3,379 +3,682 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>André Ruzene Biscalchini — Currículo, Carreira e Gestão de Pessoas</title>
-<meta name="description" content="Currículo, entrevista, recolocação e gestão de pessoas por quem viveu 16 anos do outro lado da mesa do RH. Primeira conversa: triagem honesta de 15 minutos pelo WhatsApp." />
-<meta property="og:title" content="André Ruzene Biscalchini — Currículo, Carreira e Gestão de Pessoas" />
+<title>André Biscalchini — Consultoria de Carreira e Gestão de Pessoas</title>
+<meta name="description" content="Currículo, entrevista, recolocação e estruturação de RH por quem viveu 16 anos do outro lado da mesa. Triagem honesta de 15 minutos pelo WhatsApp." />
+<meta property="og:title" content="André Biscalchini — Consultoria de Carreira e Gestão de Pessoas" />
 <meta property="og:description" content="Eu sei o que faz um currículo ser descartado e o que faz uma contratação dar certo. E posso colocar isso a seu favor." />
 <meta property="og:type" content="website" />
 <style>
   :root {
-    --ink: #0E2340;
-    --gold: #A9822E;
-    --gold-bright: #C9A24E;
-    --paper: #FBF6EA;
-    --paper-panel: #F1E6CC;
-    --text: #3A3327;
-    --text-muted: #7C7059;
-    --line: #DCCBA0;
+    --navy: #0E2340;
+    --navy-2: #16334F;
+    --navy-3: #1E4266;
+    --gold: #C9A24E;
+    --gold-deep: #A9822E;
+    --cream: #F8F5EE;
+    --white: #FFFFFF;
+    --ink: #1C2B3A;
+    --muted: #5D6B7A;
+    --line: #E6E0D2;
     --wa: #25D366;
+    --shadow: 0 12px 40px -14px rgba(14, 35, 64, 0.18);
+    --shadow-lg: 0 24px 60px -20px rgba(14, 35, 64, 0.30);
+    --radius: 16px;
   }
 
-  * { box-sizing: border-box; }
+  * { box-sizing: border-box; margin: 0; }
 
   html { scroll-behavior: smooth; }
 
   body {
-    margin: 0;
-    background: var(--paper);
-    color: var(--text);
+    background: var(--white);
+    color: var(--ink);
     font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-size: 17px;
+    font-size: 16.5px;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
   }
 
-  h1, h2, h3 { font-family: Cambria, Georgia, "Times New Roman", serif; color: var(--ink); margin: 0; text-wrap: balance; }
-  p { margin: 0 0 1em; }
-  strong { color: var(--ink); }
+  h1, h2, h3, .serif { font-family: Cambria, Georgia, "Times New Roman", serif; color: var(--navy); text-wrap: balance; }
+  img, svg { max-width: 100%; }
+  a { color: inherit; }
 
-  .wrap { max-width: 760px; margin: 0 auto; padding: 0 22px; }
-
-  /* ---------- Header ---------- */
-  header.site {
-    position: sticky; top: 0; z-index: 40;
-    background: rgba(251, 246, 234, 0.94);
-    backdrop-filter: blur(8px);
-    border-bottom: 1px solid var(--line);
-  }
-  .site-inner {
-    max-width: 760px; margin: 0 auto; padding: 12px 22px;
-    display: flex; align-items: center; justify-content: space-between; gap: 12px;
-  }
-  .brand { font-family: Cambria, Georgia, serif; font-size: 1.02rem; color: var(--ink); line-height: 1.2; }
-  .brand small { display: block; font-family: "Segoe UI", Arial, sans-serif; font-size: 0.68rem; color: var(--gold); letter-spacing: 0.08em; text-transform: uppercase; font-weight: 700; }
-  .btn {
-    display: inline-flex; align-items: center; gap: 8px;
-    background: var(--gold-bright); color: #241B04;
-    font-weight: 700; font-size: 0.9rem;
-    padding: 10px 18px; border-radius: 999px;
-    text-decoration: none; white-space: nowrap;
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
-  }
-  .btn:hover { transform: translateY(-1px); box-shadow: 0 8px 20px -10px rgba(20,35,64,0.5); }
-  .btn.big { font-size: 1rem; padding: 13px 24px; }
-  a:focus-visible { outline: 2.5px solid var(--gold); outline-offset: 3px; }
-
-  section { padding: 56px 0; }
-  @media (max-width: 600px) { section { padding: 42px 0; } }
-  @media (max-width: 480px) {
-    .site-inner { padding: 10px 14px; gap: 8px; }
-    .brand { font-size: 0.9rem; }
-    .brand small { font-size: 0.6rem; }
-    .btn { font-size: 0.78rem; padding: 9px 13px; }
-    .btn.big { white-space: normal; text-align: center; font-size: 0.95rem; }
-  }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
 
   .eyebrow {
-    display: block; font-size: 0.74rem; letter-spacing: 0.13em; text-transform: uppercase;
-    color: var(--gold); font-weight: 700; margin-bottom: 12px;
+    display: inline-flex; align-items: center; gap: 8px;
+    font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--gold-deep); font-weight: 700;
   }
-  h1.hero {
+  .eyebrow::before { content: ""; width: 22px; height: 2px; background: var(--gold); }
+
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 9px;
+    background: var(--gold); color: #221803;
+    font-weight: 700; font-size: 0.95rem;
+    padding: 14px 26px; border-radius: 999px;
+    text-decoration: none; border: 2px solid var(--gold);
+    transition: transform 0.16s ease, box-shadow 0.16s ease, background 0.16s ease;
+    cursor: pointer;
+  }
+  .btn:hover { transform: translateY(-2px); box-shadow: 0 14px 30px -12px rgba(169, 130, 46, 0.6); }
+  .btn.ghost { background: transparent; color: var(--white); border-color: rgba(255,255,255,0.4); }
+  .btn.ghost:hover { border-color: var(--gold); color: var(--gold); box-shadow: none; }
+  .btn.ghost-dark { background: transparent; color: var(--navy); border-color: rgba(14,35,64,0.25); }
+  .btn.ghost-dark:hover { border-color: var(--gold-deep); color: var(--gold-deep); box-shadow: none; }
+  a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+
+  /* ============ NAV ============ */
+  .nav {
+    position: sticky; top: 0; z-index: 90;
+    background: rgba(14, 35, 64, 0.92);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .nav-inner {
+    max-width: 1120px; margin: 0 auto; padding: 14px 24px;
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  }
+  .logo { font-family: Cambria, Georgia, serif; font-size: 1.2rem; color: var(--white); text-decoration: none; letter-spacing: 0.01em; }
+  .logo b { color: var(--gold); font-weight: 700; }
+  .nav-links { display: flex; gap: 28px; list-style: none; padding: 0; }
+  .nav-links a { color: rgba(255,255,255,0.82); text-decoration: none; font-size: 0.9rem; font-weight: 600; transition: color 0.15s; }
+  .nav-links a:hover { color: var(--gold); }
+  .nav .btn { padding: 10px 20px; font-size: 0.85rem; }
+  @media (max-width: 860px) { .nav-links { display: none; } }
+  @media (max-width: 480px) { .nav .btn { padding: 9px 14px; font-size: 0.78rem; } .logo { font-size: 1.05rem; } }
+
+  /* ============ HERO ============ */
+  .hero {
+    background:
+      radial-gradient(900px 500px at 85% -10%, rgba(201,162,78,0.16), transparent 60%),
+      radial-gradient(700px 500px at -10% 110%, rgba(30,66,102,0.9), transparent 60%),
+      linear-gradient(160deg, var(--navy) 0%, var(--navy-2) 60%, var(--navy) 100%);
+    color: var(--white);
+    padding: 88px 0 96px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::after {
+    content: "";
+    position: absolute; inset: 0;
+    background-image: radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 26px 26px;
+    pointer-events: none;
+  }
+  .hero-grid {
+    display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 56px; align-items: center;
+    position: relative; z-index: 1;
+  }
+  @media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; gap: 44px; } .hero { padding: 60px 0 70px; } }
+  .hero .eyebrow { color: var(--gold); }
+  .hero h1 {
+    color: var(--white);
     font-weight: 700;
-    font-size: clamp(1.85rem, 5.5vw, 2.7rem);
-    line-height: 1.18; margin-bottom: 20px; max-width: 19ch;
+    font-size: clamp(2rem, 4.6vw, 3.1rem);
+    line-height: 1.14;
+    margin: 18px 0 20px;
+    max-width: 18ch;
   }
-  h2.title { font-weight: 700; font-size: clamp(1.45rem, 4vw, 1.85rem); margin-bottom: 8px; }
-  .lead { color: var(--text-muted); margin-bottom: 26px; max-width: 62ch; }
-  .rule-gold { width: 34px; height: 3px; background: var(--gold); border: none; margin: 0 0 14px; }
+  .hero h1 em { font-style: normal; color: var(--gold); }
+  .hero p.sub { color: #C4CEDA; font-size: 1.08rem; max-width: 52ch; margin-bottom: 30px; }
+  .hero-ctas { display: flex; gap: 14px; flex-wrap: wrap; }
+  .hero-note { margin-top: 18px; font-size: 0.82rem; color: #8FA0B3; }
 
-  .assurance {
-    background: var(--paper-panel);
-    border-left: 5px solid var(--gold);
-    padding: 18px 22px;
-    margin: 26px 0;
-    border-radius: 0 4px 4px 0;
+  /* Hero visual: floating result cards */
+  .hero-visual { position: relative; min-height: 360px; }
+  @media (max-width: 900px) { .hero-visual { min-height: 300px; max-width: 420px; } }
+  .glow-ring {
+    position: absolute; right: 6%; top: 8%;
+    width: 300px; height: 300px; border-radius: 50%;
+    border: 1.5px solid rgba(201,162,78,0.35);
   }
-  .assurance p { font-family: Cambria, Georgia, serif; font-size: 1.15rem; line-height: 1.4; color: var(--ink); margin: 0; max-width: 58ch; }
-  .assurance strong { color: var(--gold); }
+  .glow-ring::before {
+    content: ""; position: absolute; inset: 26px; border-radius: 50%;
+    border: 1.5px dashed rgba(201,162,78,0.22);
+  }
+  .float-card {
+    position: absolute;
+    background: var(--white); color: var(--ink);
+    border-radius: 14px; padding: 14px 18px;
+    display: flex; align-items: center; gap: 12px;
+    box-shadow: var(--shadow-lg);
+    font-size: 0.9rem; font-weight: 600;
+    animation: floaty 5s ease-in-out infinite;
+  }
+  .float-card small { display: block; font-weight: 400; color: var(--muted); font-size: 0.76rem; }
+  .float-card .chip {
+    width: 38px; height: 38px; border-radius: 10px; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .fc1 { top: 6%; left: 0; animation-delay: 0s; }
+  .fc2 { top: 40%; right: 0; animation-delay: 1.2s; }
+  .fc3 { bottom: 4%; left: 8%; animation-delay: 2.4s; }
+  .chip.green { background: #E4F7EC; color: #1B8A4B; }
+  .chip.goldc { background: #F6EDD8; color: var(--gold-deep); }
+  .chip.blue { background: #E3EDF8; color: #2A5D9C; }
+  @keyframes floaty { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+  @media (prefers-reduced-motion: reduce) { .float-card { animation: none; } }
 
-  .insight { border-top: 2px solid var(--ink); padding: 18px 0; }
-  .insight:last-of-type { border-bottom: 2px solid var(--ink); }
-  .insight p { font-family: Cambria, Georgia, serif; font-size: 1.18rem; line-height: 1.35; color: var(--ink); margin: 0; max-width: 56ch; }
-  .insight strong { color: var(--gold); }
+  /* ============ TRUST STRIP ============ */
+  .trust { background: var(--navy); border-top: 1px solid rgba(255,255,255,0.08); padding: 18px 0; }
+  .trust-inner { display: flex; flex-wrap: wrap; gap: 10px 28px; align-items: center; justify-content: center; }
+  .trust span { color: #7E93AB; font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 700; }
+  .trust .dot { width: 5px; height: 5px; border-radius: 50%; background: var(--gold); }
 
-  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 26px; }
-  @media (max-width: 640px) { .cols { grid-template-columns: 1fr; } }
-  .cols h3 { font-size: 1.18rem; margin-bottom: 10px; }
-  .cols ul { margin: 0; padding-left: 20px; }
-  .cols li { margin-bottom: 7px; }
+  /* ============ SECTIONS ============ */
+  section { padding: 84px 0; }
+  @media (max-width: 700px) { section { padding: 60px 0; } }
+  .sec-head { max-width: 640px; margin-bottom: 44px; }
+  .sec-head h2 { font-weight: 700; font-size: clamp(1.6rem, 3.4vw, 2.2rem); line-height: 1.2; margin: 14px 0 12px; }
+  .sec-head p { color: var(--muted); }
+  .sec-head.center { margin-left: auto; margin-right: auto; text-align: center; }
+  .sec-head.center .eyebrow::before { display: none; }
 
-  .band { background: #F5EEDC; }
+  .alt { background: var(--cream); }
 
-  .svc { padding: 20px 0; border-bottom: 1px solid var(--line); }
-  .svc:last-of-type { border-bottom: none; }
-  .svc h3 { font-size: 1.25rem; }
-  .svc .tag {
-    font-family: "Segoe UI", Arial, sans-serif;
+  /* Insight band */
+  .insights { background: var(--cream); padding: 60px 0; }
+  .insights-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+  @media (max-width: 800px) { .insights-grid { grid-template-columns: 1fr; } }
+  .insight-card {
+    background: var(--white); border-radius: var(--radius);
+    padding: 30px 32px; box-shadow: var(--shadow);
+    border-top: 4px solid var(--gold);
+  }
+  .insight-card p { font-family: Cambria, Georgia, serif; font-size: 1.22rem; line-height: 1.4; color: var(--navy); }
+  .insight-card strong { color: var(--gold-deep); }
+
+  /* Paths (two audience cards) */
+  .paths { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+  @media (max-width: 800px) { .paths { grid-template-columns: 1fr; } }
+  .path-card {
+    border-radius: var(--radius); padding: 38px 34px;
+    display: flex; flex-direction: column; gap: 14px;
+    box-shadow: var(--shadow);
+  }
+  .path-card.you { background: var(--navy); color: var(--white); }
+  .path-card.you h3 { color: var(--white); }
+  .path-card.biz { background: var(--white); border: 1px solid var(--line); }
+  .path-card h3 { font-size: 1.5rem; font-weight: 700; }
+  .path-card p { font-size: 0.95rem; }
+  .path-card.you p { color: #BCC8D6; }
+  .path-card.biz p { color: var(--muted); }
+  .path-card ul { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 9px; font-size: 0.93rem; }
+  .path-card li { display: flex; gap: 10px; align-items: flex-start; }
+  .path-card li svg { flex-shrink: 0; margin-top: 4px; }
+  .path-card .btn { align-self: flex-start; margin-top: 8px; }
+
+  /* Stats */
+  .stats { background: linear-gradient(150deg, var(--navy), var(--navy-3)); color: var(--white); padding: 64px 0; }
+  .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 34px; text-align: center; }
+  @media (max-width: 860px) { .stats-grid { grid-template-columns: 1fr 1fr; gap: 30px 20px; } }
+  .stat .num { font-family: Cambria, Georgia, serif; font-size: clamp(2rem, 4vw, 2.9rem); color: var(--gold); font-weight: 700; line-height: 1.1; }
+  .stat .lbl { font-size: 0.84rem; color: #A9B8C9; margin-top: 6px; }
+
+  /* Service cards */
+  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  @media (max-width: 960px) { .cards { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 640px) { .cards { grid-template-columns: 1fr; } }
+  .card {
+    background: var(--white); border: 1px solid var(--line);
+    border-radius: var(--radius); padding: 28px 26px;
+    display: flex; flex-direction: column; gap: 12px;
+    transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+    position: relative;
+  }
+  .card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); border-color: transparent; }
+  .card .icon {
+    width: 48px; height: 48px; border-radius: 12px;
+    background: linear-gradient(140deg, #F6EDD8, #EFE0BC);
+    color: var(--gold-deep);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .card h3 { font-size: 1.12rem; font-weight: 700; }
+  .card p { color: var(--muted); font-size: 0.9rem; flex-grow: 1; }
+  .card .meta { font-size: 0.78rem; color: var(--gold-deep); font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; }
+  .card .tag {
+    position: absolute; top: 18px; right: 18px;
     font-size: 0.62rem; letter-spacing: 0.08em; text-transform: uppercase;
-    color: var(--gold); font-weight: 700;
-    border: 1px solid var(--gold); border-radius: 999px;
-    padding: 2px 9px; margin-left: 8px; vertical-align: middle; white-space: nowrap;
+    background: var(--navy); color: var(--gold);
+    font-weight: 700; border-radius: 999px; padding: 4px 10px;
   }
-  .svc p { color: var(--text-muted); margin: 6px 0 0; max-width: 68ch; }
-  .svc .delivery { font-style: italic; }
 
-  .qualifier {
-    background: var(--paper-panel); border-radius: 6px;
-    padding: 16px 20px; margin-bottom: 10px; font-size: 0.95rem;
+  /* Differentials */
+  .diffs { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+  @media (max-width: 960px) { .diffs { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 560px) { .diffs { grid-template-columns: 1fr; } }
+  .diff { background: var(--white); border-radius: var(--radius); padding: 26px 24px; box-shadow: var(--shadow); }
+  .diff .icon { width: 44px; height: 44px; border-radius: 50%; background: var(--navy); color: var(--gold); display: flex; align-items: center; justify-content: center; margin-bottom: 14px; }
+  .diff h3 { font-size: 1.02rem; font-weight: 700; margin-bottom: 6px; }
+  .diff p { color: var(--muted); font-size: 0.87rem; }
+
+  /* Steps */
+  .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; counter-reset: step; }
+  @media (max-width: 900px) { .steps { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 560px) { .steps { grid-template-columns: 1fr; } }
+  .stepc {
+    background: var(--white); border: 1px solid var(--line); border-radius: var(--radius);
+    padding: 26px 24px; position: relative;
   }
-  .qualifier strong { display: block; margin-bottom: 6px; }
-  .qualifier ul { margin: 0; padding-left: 20px; }
-  .qualifier li { margin-bottom: 4px; }
-
-  .seal {
-    background: var(--ink); color: var(--paper);
-    border-radius: 10px; padding: 30px 28px;
-    margin-top: 34px;
+  .stepc .n {
+    font-family: Cambria, Georgia, serif; font-size: 2.4rem; font-weight: 700;
+    color: transparent; -webkit-text-stroke: 1.5px var(--gold);
+    line-height: 1; margin-bottom: 12px; display: block;
   }
-  .seal h3 { color: var(--paper); font-size: 1.35rem; margin-bottom: 8px; }
-  .seal p { color: #C9D2DE; font-size: 0.95rem; max-width: 56ch; margin-bottom: 18px; }
-  .seal.center { text-align: center; }
-  .seal.center p { margin-left: auto; margin-right: auto; }
+  .stepc h3 { font-size: 1.02rem; font-weight: 700; margin-bottom: 6px; }
+  .stepc p { color: var(--muted); font-size: 0.87rem; }
+  .pay-note { margin-top: 26px; text-align: center; color: var(--muted); font-size: 0.9rem; }
+  .pay-note strong { color: var(--navy); }
 
-  .step { display: grid; grid-template-columns: 34px 1fr; gap: 16px; padding: 16px 0; border-top: 1px solid var(--line); }
-  .step:first-of-type { border-top: none; }
-  .step .num { font-family: Cambria, Georgia, serif; font-size: 1.55rem; color: var(--gold); line-height: 1.1; }
-  .step h3 { font-size: 1.1rem; margin-bottom: 3px; }
-  .step p { color: var(--text-muted); font-size: 0.95rem; margin: 0; max-width: 62ch; }
+  /* About */
+  .about-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 56px; align-items: center; }
+  @media (max-width: 860px) { .about-grid { grid-template-columns: 1fr; gap: 36px; } }
+  .about-visual {
+    background: linear-gradient(150deg, var(--navy), var(--navy-3));
+    border-radius: 20px; padding: 40px 34px; color: var(--white);
+    position: relative; overflow: hidden;
+    box-shadow: var(--shadow-lg);
+  }
+  .about-visual::after {
+    content: ""; position: absolute; right: -60px; top: -60px;
+    width: 220px; height: 220px; border-radius: 50%;
+    border: 1.5px solid rgba(201,162,78,0.3);
+  }
+  .about-visual blockquote { font-family: Cambria, Georgia, serif; font-size: 1.35rem; line-height: 1.4; font-style: italic; }
+  .about-visual blockquote strong { color: var(--gold); font-style: normal; }
+  .about-visual .who { margin-top: 22px; font-size: 0.9rem; color: #B9C6D4; }
+  .about-visual .who b { display: block; color: var(--white); font-size: 1.02rem; }
+  .about-text p { color: var(--muted); margin-bottom: 14px; }
+  .about-text p strong { color: var(--navy); }
+  .about-creds { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+  .about-creds span {
+    background: var(--cream); border: 1px solid var(--line);
+    border-radius: 999px; padding: 7px 15px;
+    font-size: 0.78rem; font-weight: 700; color: var(--navy);
+  }
 
-  .payment { color: var(--text-muted); font-size: 0.92rem; border-top: 1px solid var(--line); padding-top: 16px; margin-top: 10px; }
-  .payment strong { color: var(--ink); }
-
-  details.qa { border-bottom: 1px solid var(--line); padding: 14px 0; }
+  /* FAQ */
+  .faq-wrap { max-width: 760px; margin: 0 auto; }
+  details.qa { background: var(--white); border: 1px solid var(--line); border-radius: 14px; padding: 0; margin-bottom: 12px; overflow: hidden; }
   details.qa summary {
-    cursor: pointer; font-weight: 700; color: var(--ink); font-size: 1rem;
+    cursor: pointer; font-weight: 700; color: var(--navy); font-size: 1rem;
     list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 14px;
+    padding: 18px 22px;
   }
   details.qa summary::-webkit-details-marker { display: none; }
-  details.qa summary::after { content: "+"; font-family: Cambria, Georgia, serif; font-size: 1.4rem; color: var(--gold); flex-shrink: 0; }
-  details.qa[open] summary::after { content: "–"; }
-  details.qa p { color: var(--text-muted); font-size: 0.95rem; margin: 10px 0 0; max-width: 66ch; }
-
-  .about { font-size: 0.98rem; }
-  .about .who { font-family: Cambria, Georgia, serif; font-size: 1.15rem; color: var(--ink); margin-bottom: 4px; }
-  .about .creds { font-size: 0.85rem; color: var(--text-muted); }
-
-  footer.site-footer {
-    text-align: center; padding: 34px 22px 110px;
-    font-size: 0.8rem; color: var(--text-muted);
-    border-top: 1px solid var(--line);
+  details.qa summary::after {
+    content: "+"; font-family: Cambria, Georgia, serif; font-size: 1.5rem; color: var(--gold-deep);
+    flex-shrink: 0; transition: transform 0.2s;
   }
+  details.qa[open] summary::after { transform: rotate(45deg); }
+  details.qa p { color: var(--muted); font-size: 0.93rem; padding: 0 22px 18px; max-width: 64ch; }
 
-  /* ---------- Floating WhatsApp ---------- */
+  /* Final CTA */
+  .final {
+    background:
+      radial-gradient(700px 400px at 50% -20%, rgba(201,162,78,0.2), transparent 60%),
+      linear-gradient(160deg, var(--navy), var(--navy-2));
+    color: var(--white); text-align: center; padding: 92px 0;
+  }
+  .final h2 { color: var(--white); font-weight: 700; font-size: clamp(1.7rem, 3.6vw, 2.4rem); max-width: 24ch; margin: 0 auto 16px; }
+  .final p { color: #B9C6D4; max-width: 52ch; margin: 0 auto 30px; }
+  .final .btn { font-size: 1.02rem; padding: 16px 32px; }
+  .final small { display: block; margin-top: 16px; color: #7E93AB; font-size: 0.82rem; }
+
+  footer {
+    background: #0A1A30; color: #8FA0B3;
+    padding: 34px 0 110px; text-align: center; font-size: 0.82rem;
+  }
+  footer b { color: #C4CEDA; }
+
+  /* Floating WhatsApp */
   .wa-float {
-    position: fixed; right: 18px; bottom: 18px; z-index: 50;
-    width: 60px; height: 60px; border-radius: 50%;
+    position: fixed; right: 20px; bottom: 20px; z-index: 99;
+    width: 62px; height: 62px; border-radius: 50%;
     background: var(--wa);
     display: flex; align-items: center; justify-content: center;
-    box-shadow: 0 10px 26px -8px rgba(0,0,0,0.45);
+    box-shadow: 0 12px 30px -8px rgba(0,0,0,0.45);
     transition: transform 0.15s ease;
   }
-  .wa-float:hover { transform: scale(1.06); }
-  .wa-float svg { width: 32px; height: 32px; fill: #fff; }
+  .wa-float:hover { transform: scale(1.07); }
+  .wa-float svg { width: 33px; height: 33px; fill: #fff; }
 
-  @media (prefers-reduced-motion: reduce) {
-    * { transition: none !important; }
-    html { scroll-behavior: auto; }
-  }
+  /* Reveal on scroll */
+  .rv { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .rv.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) { .rv { opacity: 1; transform: none; transition: none; } html { scroll-behavior: auto; } }
 </style>
 </head>
 <body>
 
-<header class="site">
-  <div class="site-inner">
-    <div class="brand">André Biscalchini<small>Carreira · Currículo · Gestão de Pessoas</small></div>
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="logo" href="#top">André <b>Biscalchini</b></a>
+    <ul class="nav-links">
+      <li><a href="#para-voce">Para Você</a></li>
+      <li><a href="#para-empresas">Para Empresas</a></li>
+      <li><a href="#como-funciona">Como Funciona</a></li>
+      <li><a href="#sobre">Quem Sou</a></li>
+      <li><a href="#faq">Dúvidas</a></li>
+    </ul>
     <a class="btn" href="https://wa.me/5516991392337?text=Ol%C3%A1%21%20Vi%20seu%20site%20e%20gostaria%20de%20conversar.">Falar no WhatsApp</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Carreira · Currículo · Entrevistas · Gestão de Pessoas</span>
+      <h1>Quantas oportunidades já passaram por você <em>sem que você soubesse por quê?</em></h1>
+      <p class="sub">Currículos qualificados são descartados em segundos por sistemas de inteligência artificial. Empresas perdem dinheiro contratando errado. Eu estive 16 anos do outro lado da mesa e sei exatamente o que decide esses resultados.</p>
+      <div class="hero-ctas">
+        <a class="btn" href="https://wa.me/5516991392337?text=Ol%C3%A1%21%20Vi%20seu%20site%20e%20quero%20fazer%20a%20triagem%20de%2015%20minutos.">Começar pela triagem gratuita</a>
+        <a class="btn ghost" href="#para-voce">Conhecer os serviços</a>
+      </div>
+      <p class="hero-note">Triagem honesta de 15 minutos · Sem compromisso · Se eu não puder ajudar, eu digo</p>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="glow-ring"></div>
+      <div class="float-card fc1">
+        <div class="chip green"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+        <div>Currículo aprovado no ATS<small>subiu no ranking da vaga</small></div>
+      </div>
+      <div class="float-card fc2">
+        <div class="chip blue"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+        <div>Entrevista marcada<small>quinta-feira, 10h</small></div>
+      </div>
+      <div class="float-card fc3">
+        <div class="chip goldc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15a7 7 0 1 0 0-14 7 7 0 0 0 0 14z"/><path d="M8.2 13.9 7 23l5-3 5 3-1.2-9.1"/></svg></div>
+        <div>Proposta recebida<small>novo capítulo começando</small></div>
+      </div>
+    </div>
   </div>
 </header>
 
-<main>
+<!-- TRUST STRIP -->
+<div class="trust">
+  <div class="wrap trust-inner">
+    <span>Startups</span><i class="dot"></i>
+    <span>Multinacionais</span><i class="dot"></i>
+    <span>Empresas familiares</span><i class="dot"></i>
+    <span>Grandes grupos nacionais</span><i class="dot"></i>
+    <span>Todos os níveis de carreira</span>
+  </div>
+</div>
 
-  <!-- HERO -->
-  <section>
-    <div class="wrap">
-      <span class="eyebrow">Currículo · Entrevista · Recolocação · Carreira · Gestão de Pessoas</span>
-      <h1 class="hero">Quantas oportunidades já passaram por você, sem que você soubesse por quê?</h1>
-      <p>Currículos qualificados são descartados em segundos por sistemas de inteligência artificial. Profissionais preparados ficam para trás por não saberem se apresentar. Empresas perdem tempo e dinheiro contratando errado.</p>
-      <p>Eu já estive do outro lado da mesa: entrevistando, promovendo, decidindo quem ficava e quem saía, em startups, multinacionais, empresas familiares e grandes grupos nacionais. <strong>Sei o que faz um currículo ser descartado e o que faz uma contratação dar certo.</strong></p>
-      <div class="assurance">
-        <p>Isso tem solução. <strong>Eu resolvo isso todos os dias, e nesta página você vai ver como posso resolver para você.</strong></p>
-      </div>
-      <a class="btn big" href="https://wa.me/5516991392337?text=Ol%C3%A1%21%20Vi%20seu%20site%20e%20gostaria%20de%20conversar.">Começar pela triagem gratuita de 15 min</a>
+<!-- INSIGHTS -->
+<div class="insights">
+  <div class="wrap insights-grid">
+    <div class="insight-card rv"><p>Currículo bom não é o que impressiona. É o que sobrevive aos <strong>cinco segundos de leitura</strong> que decidem se ele avança.</p></div>
+    <div class="insight-card rv"><p>Contratação boa não é a mais rápida. É a que <strong>não precisa ser refeita três meses depois.</strong></p></div>
+  </div>
+</div>
+
+<!-- PATHS -->
+<section>
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">Por onde você quer começar?</span>
+      <h2>Dois caminhos, o mesmo compromisso</h2>
+      <p>Atendimento pessoal e criterioso, do início ao fim. Antes de aceitar qualquer trabalho, eu avalio se realmente posso ajudar.</p>
     </div>
-  </section>
-
-  <!-- INSIGHTS -->
-  <section class="band">
-    <div class="wrap">
-      <div class="insight"><p>Currículo bom não é o que impressiona. É o que sobrevive aos cinco segundos de leitura que decidem se ele avança.</p></div>
-      <div class="insight"><p>Contratação boa não é a mais rápida. É a que <strong>não precisa ser refeita três meses depois.</strong></p></div>
-    </div>
-  </section>
-
-  <!-- O QUE MUDA -->
-  <section>
-    <div class="wrap">
-      <hr class="rule-gold" />
-      <h2 class="title">O que muda a partir de agora</h2>
-      <div class="cols">
-        <div>
-          <h3>Para você</h3>
-          <ul>
-            <li>Você é chamado para entrevista, não só envia currículo</li>
-            <li>Você se reposiciona no mercado com total discrição</li>
-            <li>Você dá o próximo passo na carreira, seja ele qual for</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Para sua empresa</h3>
-          <ul>
-            <li>Você contrata a pessoa certa da primeira vez</li>
-            <li>Seu processo de gente deixa de depender de sorte</li>
-            <li>Seus gestores aprendem a entrevistar e reter talento</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PARA VOCÊ -->
-  <section class="band" id="para-voce">
-    <div class="wrap">
-      <hr class="rule-gold" />
-      <h2 class="title">Para Você</h2>
-      <p class="lead">De membros de equipe a diretores. Para quem busca recolocação, quer se reposicionar com discrição ou mira o próximo nível.</p>
-
-      <div class="qualifier">
-        <strong>Esses serviços são para você se:</strong>
+    <div class="paths">
+      <div class="path-card you rv">
+        <h3>Para a sua carreira</h3>
+        <p>De membros de equipe a diretores. Para quem busca recolocação, quer se reposicionar com discrição ou mira o próximo nível.</p>
         <ul>
-          <li>Está buscando recolocação ou envia currículos e não é chamado</li>
-          <li>Está empregado e quer se reposicionar no mercado, com discrição</li>
-          <li>Quer alcançar o próximo passo: sua primeira liderança ou uma diretoria</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A24E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Ser chamado para entrevista, não só enviar currículo</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A24E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Reposicionar-se no mercado com total discrição</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C9A24E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Dar o próximo passo, seja ele qual for</li>
         </ul>
+        <a class="btn" href="#para-voce">Ver serviços de carreira</a>
       </div>
-
-      <div class="svc"><h3>Revisão Estratégica de Currículo</h3><p>Reescrito por quem tria currículos profissionalmente. Para recolocação, mudança de área ou reposicionamento. <span class="delivery">Pronto em até 2 dias úteis.</span></p></div>
-      <div class="svc"><h3>Otimização para ATS e IA<span class="tag">Novo</span></h3><p>Palavras-chave e estrutura calibradas para os sistemas que ranqueiam seu currículo (Gupy e similares), para você chegar à análise humana. <span class="delivery">Por vaga, em até 2 dias.</span></p></div>
-      <div class="svc"><h3>Otimização de LinkedIn</h3><p>Headline e resumo reposicionados para você ser encontrado pelos recrutadores. <span class="delivery">Textos prontos em até 2 dias.</span></p></div>
-      <div class="svc"><h3>Programa Recolocação<span class="tag">★ Mais escolhido</span></h3><p>Currículo + LinkedIn + sessão de direcionamento de 30 minutos. Tudo alinhado para se apresentar ao mercado. <span class="delivery">Pacote completo em até 5 dias.</span></p></div>
-      <div class="svc"><h3>Simulação de Entrevista</h3><p>Entrevista simulada no nível real que você vai enfrentar, incluindo etapas comportamentais. <span class="delivery">Sessão de 1h + relatório de pontos fortes e riscos.</span></p></div>
-      <div class="svc"><h3>PDI Estruturado</h3><p>Plano documentado para vencer a distância entre onde você está e onde quer chegar. <span class="delivery">Plano + sessão de 1h.</span></p></div>
-      <div class="svc"><h3>Mentoria de Carreira</h3><p>Aceitar proposta? Mudar de área? Como se posicionar? Acompanhamento individual para decisões de carreira. <span class="delivery">Sessões de 1h, avulsas ou em pacote.</span></p></div>
-
-      <div class="seal">
-        <h3>Não encontrou o que precisa?</h3>
-        <p>Cada carreira é única. Me conte o seu momento e, se eu puder ajudar de um jeito que não está aqui, a gente desenha juntos.</p>
-        <a class="btn" href="https://wa.me/5516991392337?text=Ol%C3%A1%21%20Vi%20seu%20site%20e%20gostaria%20de%20conversar.">Chamar no WhatsApp</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- PARA EMPRESAS -->
-  <section id="para-empresas">
-    <div class="wrap">
-      <hr class="rule-gold" />
-      <h2 class="title">Para Empresas e Organizações</h2>
-      <p class="lead">Gestão de pessoas estruturada por quem viveu por dentro startups, multinacionais, empresas familiares e grandes grupos, adaptada à sua realidade e ao seu orçamento.</p>
-
-      <div class="qualifier">
-        <strong>Esses serviços são para a sua organização se:</strong>
+      <div class="path-card biz rv">
+        <h3>Para a sua empresa</h3>
+        <p>Gestão de pessoas estruturada por quem viveu por dentro cada tipo de organização, adaptada à sua realidade e ao seu orçamento.</p>
         <ul>
-          <li>Não existe área de RH estruturada, e as decisões de gente são no improviso</li>
-          <li>Contratações erradas estão custando caro</li>
-          <li>Os gestores nunca foram preparados para entrevistar, avaliar e dar feedback</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#A9822E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Contratar a pessoa certa da primeira vez</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#A9822E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Processo de gente que não depende de sorte</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#A9822E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Gestores preparados para entrevistar e reter talento</li>
         </ul>
-      </div>
-
-      <div class="svc"><h3>Contratação Assistida</h3><p>Descrição de vaga, triagem estruturada e roteiro de entrevista para fechar a posição certa. <span class="delivery">Por vaga, em até 3 dias.</span></p></div>
-      <div class="svc"><h3>Diagnóstico de Gestão de Pessoas</h3><p>Os 3 a 5 maiores riscos de gente da sua organização e por onde começar. Sem relatório de 80 páginas que ninguém lê. <span class="delivery">Em 2 semanas.</span></p></div>
-      <div class="svc"><h3>Estruturação Essencial de RH</h3><p>Contratação, integração, rotinas e políticas básicas de gestão de pessoas. Pronto para usar. <span class="delivery">Em até 3 semanas.</span></p></div>
-      <div class="svc"><h3>Treinamento de Gestores</h3><p>Gestor que entrevista mal contrata errado; gestor que não dá feedback perde gente boa. Treinamento prático, com casos da própria organização. <span class="delivery">Meio período, por turma.</span></p></div>
-      <div class="svc"><h3>Avaliação de Desempenho Implantada</h3><p>Processo implantado e gestores treinados para conversas de desempenho de verdade, sem sistema caro.</p></div>
-      <div class="svc"><h3>Cargos, Salários e Funções Claras</h3><p>Quem faz o quê, quem responde a quem, quanto cada função vale. O fim do "aqui todo mundo faz de tudo". <span class="delivery">Em 3 a 4 semanas.</span></p></div>
-
-      <div class="seal">
-        <h3>Sua necessidade é diferente destas?</h3>
-        <p>Projetos sob medida também acontecem. Me conte o desafio e eu digo, com franqueza, se posso ajudar.</p>
-        <a class="btn" href="https://wa.me/5516991392337?text=Ol%C3%A1%21%20Vi%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20minha%20empresa.">Chamar no WhatsApp</a>
+        <a class="btn ghost-dark" href="#para-empresas">Ver serviços para empresas</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- COMO FUNCIONA -->
-  <section class="band">
-    <div class="wrap">
-      <hr class="rule-gold" />
-      <h2 class="title">Como funciona</h2>
-      <div style="margin-top:18px;">
-        <div class="step"><div class="num">1</div><div><h3>Você me chama</h3><p>Uma mensagem no WhatsApp contando o que precisa. Sem formulário, sem burocracia.</p></div></div>
-        <div class="step"><div class="num">2</div><div><h3>Triagem honesta em 15 minutos</h3><p>Converso com você para entender o caso. Se eu não for a pessoa certa, eu digo. E, se souber, indico quem é.</p></div></div>
-        <div class="step"><div class="num">3</div><div><h3>Proposta clara</h3><p>O que será entregue, em quanto tempo e por quanto. Sem surpresa no final.</p></div></div>
-        <div class="step"><div class="num">4</div><div><h3>Mão na massa</h3><p>Entrega no prazo, com comunicação direta comigo do início ao fim. Toda entrega inclui 1 rodada de ajustes.</p></div></div>
+<!-- STATS -->
+<div class="stats">
+  <div class="wrap stats-grid">
+    <div class="stat rv"><div class="num">16</div><div class="lbl">anos vivendo o RH do outro lado da mesa</div></div>
+    <div class="stat rv"><div class="num">49 → 17</div><div class="lbl">dias: redução no tempo de contratação que já entreguei</div></div>
+    <div class="stat rv"><div class="num">Milhares</div><div class="lbl">de currículos analisados profissionalmente</div></div>
+    <div class="stat rv"><div class="num">Centenas</div><div class="lbl">de entrevistas e processos seletivos conduzidos</div></div>
+  </div>
+</div>
+
+<!-- PARA VOCÊ -->
+<section class="alt" id="para-voce">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Para a sua carreira</span>
+      <h2>Serviços para você sair na frente</h2>
+      <p>Cada entrega feita por quem tria currículos e conduz entrevistas profissionalmente, e sabe o que o mercado avalia.</p>
+    </div>
+    <div class="cards">
+      <div class="card rv">
+        <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg></div>
+        <h3>Revisão Estratégica de Currículo</h3>
+        <p>Reescrito por quem tria currículos profissionalmente. Para recolocação, mudança de área ou reposicionamento.</p>
+        <span class="meta">Pronto em até 2 dias úteis</span>
       </div>
-      <p class="payment"><strong>Pagamento:</strong> Pix, com QR Code na hora. Empresas: 50% no início + 50% na entrega, com recibo.</p>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section>
-    <div class="wrap">
-      <hr class="rule-gold" />
-      <h2 class="title">Perguntas frequentes</h2>
-      <div style="margin-top:14px;">
-        <details class="qa"><summary>Preciso de reunião para fazer meu currículo?</summary><p>Não. Tudo pelo WhatsApp: você envia seu currículo atual e a vaga que busca, e eu entrego o material pronto.</p></details>
-        <details class="qa"><summary>Estou empregado. Meu processo é confidencial?</summary><p>Totalmente. Nada é divulgado, e as otimizações rodam em modo discreto, sem alertar sua rede atual.</p></details>
-        <details class="qa"><summary>Você inventa informações para melhorar o currículo?</summary><p>Nunca. Trabalho apenas com sua trajetória real, apresentada da forma mais estratégica possível.</p></details>
-        <details class="qa"><summary>Em quanto tempo fica pronto?</summary><p>Currículo e LinkedIn: até 2 dias úteis. Precisa para amanhã? Pergunte sobre a Entrega Expressa em 24h.</p></details>
-        <details class="qa"><summary>Como funciona o pagamento?</summary><p>Pix, com QR Code na hora. Para empresas: 50% no início e 50% na entrega, com recibo.</p></details>
-        <details class="qa"><summary>E se eu não gostar do resultado?</summary><p>Toda entrega inclui 1 rodada de ajustes sem custo. Meu objetivo é você usar o material com orgulho.</p></details>
+      <div class="card rv">
+        <span class="tag">Novo</span>
+        <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+        <h3>Otimização para ATS e IA</h3>
+        <p>Palavras-chave e estrutura calibradas para os sistemas que ranqueiam seu currículo (Gupy e similares), para você chegar à análise humana.</p>
+        <span class="meta">Por vaga · até 2 dias</span>
+      </div>
+      <div class="card rv">
+        <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></div>
+        <h3>Otimização de LinkedIn</h3>
+        <p>Headline e resumo reposicionados para você ser encontrado pelos recrutadores, em vez de só se candidatar e esperar.</p>
+        <span class="meta">Textos prontos · até 2 dias</span>
+      </div>
+      <div class="card rv">
+        <span class="tag">★ Mais escolhido</span>
+        <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg></div>
+        <h3>Programa Recolocação</h3>
+        <p>Currículo + LinkedIn + sessão de direcionamento de 30 minutos. A base completa, com tudo alinhado, para se apresentar ao mercado.</p>
+        <span class="meta">Pacote completo · até 5 dias</span>
+      </div>
+      <div class="card rv">
+        <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <h3>Simulação de Entrevista</h3>
+        <p>Entrevista simulada no nível real que você vai enfrentar, incluindo etapas comportamentais, com feedback de quem conduziu centenas de processos.</p>
+        <span class="meta">Sessão de 1h + relatório</span>
+      </div>
+      <div class="card rv">
+        <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 5-6"/></svg></div>
+        <h3>PDI Estruturado</h3>
+        <p>Plano documentado para vencer a distância entre onde você está e onde quer chegar, construído com um psicólogo especialista em carreiras.</p>
+        <span class="meta">Plano + sessão de 1h</span>
+      </div>
+      <div class="card rv">
+        <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M16.24 7.76 14.12 14.12 7.76 16.24l2.12-6.36z"/></svg></div>
+        <h3>Mentoria de Carreira</h3>
+        <p>Aceitar proposta? Mudar de área? Como se posicionar? Acompanhamento individual para decisões de carreira em qualquer nível.</p>
+        <span class="meta">Sessões de 1h · avulsas ou pacote</span>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- QUEM SOU -->
-  <section class="band">
-    <div class="wrap about">
-      <hr class="rule-gold" />
-      <h2 class="title">Quem está do seu lado</h2>
-      <p style="margin-top:14px;">São 16 anos vivendo o RH por dentro: formei e desenvolvi profissionais e equipes inteiras de Recursos Humanos, e estruturei áreas de gestão de pessoas que empresas usam até hoje. Sou psicólogo, com MBA em Gestão de Pessoas e especializações no Insper, FGV, Mackenzie e FDC. É a psicologia que me permite ler o que está por trás dos comportamentos: o que um entrevistador realmente avalia e o que faz uma equipe funcionar.</p>
-      <p>E cada atendimento é pessoal, do início ao fim. Antes de aceitar qualquer trabalho, eu converso com você para entender o caso e avaliar se realmente posso ajudar. Quando eu aceito, é porque sei que consigo entregar.</p>
-      <p class="who">André Ruzene Biscalchini</p>
-      <p class="creds">Psicólogo · 16 anos em Recursos Humanos e Gestão de Pessoas</p>
+<!-- PARA EMPRESAS -->
+<section id="para-empresas">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Para a sua empresa</span>
+      <h2>RH estruturado, sem improviso</h2>
+      <p>Para organizações que não têm RH estruturado, perdem dinheiro com contratações erradas ou têm gestores que nunca foram preparados para liderar gente.</p>
     </div>
-  </section>
-
-  <!-- CTA FINAL -->
-  <section>
-    <div class="wrap">
-      <div class="seal center" style="margin-top:0;">
-        <h3>A oportunidade que você estava esperando pode começar com uma mensagem.</h3>
-        <p>A primeira conversa é uma triagem honesta de 15 minutos. Sem compromisso, sem venda forçada. Se eu não puder ajudar, eu digo.</p>
-        <a class="btn big" href="https://wa.me/5516991392337?text=Ol%C3%A1%21%20Vi%20seu%20site%20e%20gostaria%20de%20conversar.">Chamar no WhatsApp: (16) 99139-2337</a>
+    <div class="cards">
+      <div class="card rv">
+        <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></div>
+        <h3>Contratação Assistida</h3>
+        <p>Descrição de vaga, triagem estruturada e roteiro de entrevista para fechar a posição certa, sem refação.</p>
+        <span class="meta">Por vaga · até 3 dias</span>
+      </div>
+      <div class="card rv">
+        <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a10 10 0 1 0-10-10"/><path d="M12 6v6l4 2"/></svg></div>
+        <h3>Diagnóstico de Gestão de Pessoas</h3>
+        <p>Os 3 a 5 maiores riscos de gente da sua organização e por onde começar. Sem relatório de 80 páginas que ninguém lê.</p>
+        <span class="meta">Relatório objetivo · 2 semanas</span>
+      </div>
+      <div class="card rv">
+        <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></div>
+        <h3>Estruturação Essencial de RH</h3>
+        <p>Contratação, integração, rotinas e políticas básicas de gestão de pessoas. Pronto para usar.</p>
+        <span class="meta">Estrutura completa · até 3 semanas</span>
+      </div>
+      <div class="card rv">
+        <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3>Treinamento de Gestores</h3>
+        <p>Gestor que entrevista mal contrata errado; gestor que não dá feedback perde gente boa. Treinamento prático, com casos da própria organização.</p>
+        <span class="meta">Meio período · por turma</span>
+      </div>
+      <div class="card rv">
+        <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+        <h3>Avaliação de Desempenho Implantada</h3>
+        <p>Processo implantado e gestores treinados para conversas de desempenho de verdade, sem depender de sistema caro.</p>
+        <span class="meta">Processo + gestores treinados</span>
+      </div>
+      <div class="card rv">
+        <div class="icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20h20M5 20V8l7-5 7 5v12M9 20v-6h6v6"/></svg></div>
+        <h3>Cargos, Salários e Funções Claras</h3>
+        <p>Quem faz o quê, quem responde a quem, quanto cada função vale. O fim do "aqui todo mundo faz de tudo".</p>
+        <span class="meta">Estrutura completa · 3 a 4 semanas</span>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-</main>
+<!-- DIFERENCIAIS -->
+<section class="alt">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">Por que comigo</span>
+      <h2>O diferencial de quem viveu o outro lado</h2>
+    </div>
+    <div class="diffs">
+      <div class="diff rv">
+        <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h3>Triagem honesta</h3>
+        <p>Antes de aceitar qualquer trabalho, converso com você. Se eu não for a pessoa certa, eu digo. E, se souber, indico quem é.</p>
+      </div>
+      <div class="diff rv">
+        <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+        <h3>Atendimento pessoal</h3>
+        <p>Comunicação direta comigo do início ao fim. Nenhuma etapa terceirizada, nenhum robô no meio do caminho.</p>
+      </div>
+      <div class="diff rv">
+        <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 1 7 7c0 2.4-1.2 4.1-2.6 5.4-.8.8-1.4 1.9-1.4 3.1V19a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2v-1.5c0-1.2-.6-2.3-1.4-3.1C6.2 13.1 5 11.4 5 9a7 7 0 0 1 7-7z"/></svg></div>
+        <h3>Psicologia aplicada</h3>
+        <p>Formação em psicologia para ler o que está por trás dos comportamentos: o que o entrevistador avalia e o que faz uma equipe funcionar.</p>
+      </div>
+      <div class="diff rv">
+        <div class="icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+        <h3>Entrega rápida</h3>
+        <p>Currículo e LinkedIn em até 2 dias úteis. Precisa para amanhã? Existe a Entrega Expressa em 24h.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-<footer class="site-footer">
-  André Ruzene Biscalchini · Psicólogo · Recursos Humanos e Gestão de Pessoas · Atendimento pelo WhatsApp em todo o Brasil
+<!-- COMO FUNCIONA -->
+<section id="como-funciona">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">Processo</span>
+      <h2>Como funciona: simples assim</h2>
+    </div>
+    <div class="steps">
+      <div class="stepc rv"><span class="n">01</span><h3>Você me chama</h3><p>Uma mensagem no WhatsApp contando o que precisa. Sem formulário, sem burocracia.</p></div>
+      <div class="stepc rv"><span class="n">02</span><h3>Triagem honesta de 15 min</h3><p>Converso com você para entender o caso e avaliar, com franqueza, se posso ajudar.</p></div>
+      <div class="stepc rv"><span class="n">03</span><h3>Proposta clara</h3><p>O que será entregue, em quanto tempo e por quanto. Sem surpresa no final.</p></div>
+      <div class="stepc rv"><span class="n">04</span><h3>Mão na massa</h3><p>Entrega no prazo, com 1 rodada de ajustes inclusa em toda entrega.</p></div>
+    </div>
+    <p class="pay-note"><strong>Pagamento:</strong> Pix com QR Code na hora · Empresas: 50% no início + 50% na entrega, com recibo</p>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section class="alt" id="sobre">
+  <div class="wrap about-grid">
+    <div class="about-visual rv">
+      <blockquote>Enquanto outros ensinam a disputar vagas, <strong>eu mostro o que acontece do outro lado da mesa.</strong></blockquote>
+      <div class="who"><b>André Ruzene Biscalchini</b>Psicólogo · 16 anos em Recursos Humanos e Gestão de Pessoas</div>
+    </div>
+    <div class="about-text rv">
+      <span class="eyebrow">Quem está do seu lado</span>
+      <h2 style="font-weight:700; font-size:clamp(1.5rem,3vw,2rem); margin:14px 0 16px;">16 anos decidindo quem avança e o que funciona</h2>
+      <p>Entrevistei, promovi e estruturei áreas de gestão de pessoas em startups, multinacionais, empresas familiares e grandes grupos nacionais. <strong>Formei e desenvolvi equipes inteiras de RH</strong>, e sei o que cada profissional analisa quando o seu currículo chega à mesa.</p>
+      <p>Sou psicólogo, com MBA em Gestão de Pessoas e especializações nas instituições mais renomadas do Brasil. É a psicologia que me permite ler o que está por trás dos comportamentos e aplicar, no seu caso, as mesmas práticas usadas nas principais empresas do país.</p>
+      <div class="about-creds">
+        <span>Psicologia</span><span>MBA em Gestão de Pessoas</span><span>Insper</span><span>FGV</span><span>Mackenzie</span><span>FDC</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">Dúvidas frequentes</span>
+      <h2>Você deve estar se perguntando...</h2>
+    </div>
+    <div class="faq-wrap">
+      <details class="qa rv"><summary>Preciso de reunião para fazer meu currículo?</summary><p>Não. Tudo pelo WhatsApp: você envia seu currículo atual e a vaga que busca, e eu entrego o material pronto.</p></details>
+      <details class="qa rv"><summary>Estou empregado. Meu processo é confidencial?</summary><p>Totalmente. Nada é divulgado, e as otimizações rodam em modo discreto, sem alertar sua rede atual.</p></details>
+      <details class="qa rv"><summary>Você inventa informações para melhorar o currículo?</summary><p>Nunca. Trabalho apenas com sua trajetória real, apresentada da forma mais estratégica possível.</p></details>
+      <details class="qa rv"><summary>Em quanto tempo fica pronto?</summary><p>Currículo e LinkedIn: até 2 dias úteis. Precisa para amanhã? Pergunte sobre a Entrega Expressa em 24h.</p></details>
+      <details class="qa rv"><summary>Como funciona o pagamento?</summary><p>Pix, com QR Code na hora. Para empresas: 50% no início e 50% na entrega, com recibo.</p></details>
+      <details class="qa rv"><summary>E se eu não gostar do resultado?</summary><p>Toda entrega inclui 1 rodada de ajustes sem custo. Meu objetivo é você usar o material com orgulho.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<div class="final">
+  <div class="wrap">
+    <h2>A oportunidade que você estava esperando pode começar com uma mensagem.</h2>
+    <p>A primeira conversa é uma triagem honesta de 15 minutos. Sem compromisso, sem venda forçada. Se eu não puder ajudar, eu digo.</p>
+    <a class="btn" href="https://wa.me/5516991392337?text=Ol%C3%A1%21%20Vi%20seu%20site%20e%20quero%20fazer%20a%20triagem%20de%2015%20minutos.">Chamar no WhatsApp agora</a>
+    <small>(16) 99139-2337 · Resposta direta, sem robô e sem espera</small>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap"><b>André Ruzene Biscalchini</b> · Psicólogo · Recursos Humanos e Gestão de Pessoas · Atendimento pelo WhatsApp em todo o Brasil</div>
 </footer>
 
 <a class="wa-float" href="https://wa.me/5516991392337?text=Ol%C3%A1%21%20Vi%20seu%20site%20e%20gostaria%20de%20conversar." aria-label="Conversar no WhatsApp">
   <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.3c1.9 1 4 1.6 6.2 1.6h.5c6.6 0 12-5.3 12-11.9C30 8.3 24.6 3 16 3zm6.9 16.9c-.3.8-1.7 1.6-2.4 1.7-.6.1-1.4.2-2.3-.1-.5-.2-1.2-.4-2.1-.8-3.7-1.6-6.1-5.3-6.3-5.5-.2-.2-1.5-2-1.5-3.8 0-1.8 1-2.7 1.3-3.1.3-.4.7-.5 1-.5h.7c.2 0 .5-.1.8.6.3.8 1.1 2.6 1.2 2.8.1.2.2.4 0 .7-.1.3-.2.4-.4.7-.2.2-.4.5-.6.7-.2.2-.4.4-.2.8.2.4 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.2.9-.1.2-.3 1-1.2 1.3-1.6.3-.4.5-.3.9-.2.4.1 2.2 1 2.6 1.2.4.2.6.3.7.5.1.2.1.9-.2 1.7z"/></svg>
 </a>
+
+<script>
+  var obs = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { e.target.classList.add("in"); obs.unobserve(e.target); }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll(".rv").forEach(function (el) { obs.observe(el); });
+</script>
 
 </body>
 </html>
